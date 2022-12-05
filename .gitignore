@@ -56,3 +56,7 @@ __azurite_db*__.json
 **/*.tfstate.backup
 **/tf.plan
 
+**/id_rsa
+**/id_rsa.pub
+**/out
+
