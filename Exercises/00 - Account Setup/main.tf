@@ -44,7 +44,8 @@ variable "budget_alert_contacts" {
 #
 #------------------------------------------------------------------------------
 locals {
-  budget_start_date = formatdate("2022-12-01'T00:00:00Z'", timestamp())
+  # the budget start at the begining of the month
+  budget_start_date = formatdate("YYYY-MM-01'T'00:00:00Z", timestamp())
   budget_end_date   = timeadd(local.budget_start_date, "17520h") # 2 years
 }
 

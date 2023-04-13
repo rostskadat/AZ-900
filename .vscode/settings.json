@@ -1,6 +1,10 @@
 {
-    "azureFunctions.deploySubpath": "Labs\\Create and Configure Azure Functions\\HttpTriggerFuncApp/bin/Release/net6.0/publish",
-    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.deploySubpath": "Exercises\\02 - Managed Compute Services\\function-app-python",
+    "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~4",
-    "azureFunctions.preDeployTask": "publish (functions)"
+    "azureFunctions.preDeployTask": "publish (functions)",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguageModel": 2,
+    "azureFunctions.projectSubpath": "Exercises\\02 - Managed Compute Services\\SampleApp"
 }

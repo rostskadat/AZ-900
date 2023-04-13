@@ -1,0 +1,8 @@
+azure-mgmt-resource
+azure-mgmt-rdbms
+azure-identity
+mysql
+mysql-connector
+pyodbc
+PyMongo
+redis
