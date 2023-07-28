@@ -18,4 +18,3 @@ PS> .\venv\Scripts\Activate.ps1
 ``` 
 
 * Then look at each Lab's `README.md` for more details
-
