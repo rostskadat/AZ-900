@@ -69,13 +69,31 @@
     },
     {
       "type": "func",
-      "dependsOn": "build (functions)",
-      "options": {
-        "cwd": "${workspaceFolder}/Labs\\Create and Configure Azure Functions\\HttpTriggerFuncApp/bin/Debug/net6.0"
-      },
+      "label": "func: host start",
       "command": "host start",
+      "problemMatcher": "$func-python-watch",
       "isBackground": true,
-      "problemMatcher": "$func-dotnet-watch"
+      "dependsOn": "pip install (functions)",
+      "options": {
+        "cwd": "${workspaceFolder}/Exercises\\02 - Managed Compute Services\\function-app-python"
+      }
+    },
+    {
+      "label": "pip install (functions)",
+      "type": "shell",
+      "osx": {
+        "command": "${config:azureFunctions.pythonVenv}/bin/python -m pip install -r requirements.txt"
+      },
+      "windows": {
+        "command": "${config:azureFunctions.pythonVenv}\\Scripts\\python -m pip install -r requirements.txt"
+      },
+      "linux": {
+        "command": "${config:azureFunctions.pythonVenv}/bin/python -m pip install -r requirements.txt"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/Exercises\\02 - Managed Compute Services\\function-app-python"
+      }
     }
   ]
 }
